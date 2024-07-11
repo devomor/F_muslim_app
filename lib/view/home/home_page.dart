@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_qibla_package_testing/azan.dart';
-import 'package:flutter_qibla_package_testing/qiblah_compass.dart';
+import 'package:flutter_qibla_package_testing/view/tabs_screen/azan.dart';
+import 'package:flutter_qibla_package_testing/view/tabs_screen/qiblah_compass.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});

@@ -1,10 +1,9 @@
 
 import 'package:android_alarm_manager_plus/android_alarm_manager_plus.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_qibla_package_testing/home_page.dart';
-import 'package:flutter_qibla_package_testing/service_notification.dart';
+import 'package:flutter_qibla_package_testing/view/home/home_page.dart';
+import 'package:flutter_qibla_package_testing/shared_service/service_notification.dart';
 import 'package:flutter_qiblah/flutter_qiblah.dart';
-import 'package:timezone/data/latest.dart' as tz;
 import 'package:timezone/data/latest.dart' as tz;
 import 'package:timezone/timezone.dart' as tz;
 import 'package:permission_handler/permission_handler.dart';
@@ -21,7 +20,7 @@ void main() async {
   await AndroidAlarmManager.initialize();
   runApp(MyApp());
   await AndroidAlarmManager.periodic(
-    Duration(seconds: 1),
+    Duration(hours: 24),
     0,
     notificationService.backgroundTask,
     exact: true,

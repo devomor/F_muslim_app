@@ -1,7 +1,7 @@
 import 'package:adhan/adhan.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_qibla_package_testing/getprayertime.dart';
-import 'package:flutter_qibla_package_testing/service_notification.dart';
+import 'package:flutter_qibla_package_testing/controller/get_prayer_time.dart';
+import 'package:flutter_qibla_package_testing/shared_service/service_notification.dart';
 import 'package:intl/intl.dart';
 
 class MyHomePage extends StatefulWidget {
